@@ -5,7 +5,7 @@ import './Home.css'
 function Home() {
   const [country, setCountry] = useState('');
   const [universities, setUniversities] = useState([]);
-  const [showList, setShowList] = useState(false);
+  const [showList, setShowList] = useState();
 
   useEffect(() => {
     const fetchUniversities = async () => {
@@ -35,7 +35,8 @@ function Home() {
         <input type="text" id="search-input" placeholder="Search for universities" value={country} onChange={handleChange}/>
         <button type="button" onClick={setUniversities}><FaSearchengin /></button>
       </form>
-
+<br /><br />
+<div className="container">
       {showList && universities.length > 0 ? (
         <ul>
           {universities.map((university) => (
@@ -53,6 +54,7 @@ function Home() {
           ))}
         </ul>
       ) : showList && <p>No universities found.</p>}
+      </div>
     </div>
   );
 }

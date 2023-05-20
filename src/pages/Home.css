@@ -1,19 +1,37 @@
-.card-container {
+.container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
   }
   
-  .card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 5px;
+  .container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-wrap;
+  }
+  
+  .container li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 300px;
-  }
-  
-  .card-content {
-    margin-bottom: 10px;
-  }  
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(204,229,255);
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    font-weight: bold;
+
+    }
   label{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -25,5 +43,33 @@
   }
   form{
    align-items:center;
-    justify-content: center; 
+    display: flex;
+    margin-left: 250px;
+  }
+  input{
+    padding: 10px;
+    color:black;
+    border: 2px dotted pink;
+    border-radius:20px;
+    background-color:silver;
+    font-size: 30px;
+  }
+  button{
+    padding: 10px;
+    color:black;
+    background-color: green;
+    margin-left: 3px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  ul{
+    list-style: none;
+    text-decoration: none;
+
+  }
+  img{
+    height: 30px;
+    width: auto;
   }
