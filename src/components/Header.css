@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    background-color:burlywood;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: static;
+}
+.unl{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.unl li{
+    align-items:center;
+    padding: 10px;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+    border-radius:5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.unl li:hover {
+    cursor:pointer;
+    background-color:rgb(167, 164, 177);
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+
+}
+.account h1{
+    text-decoration: solid;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
